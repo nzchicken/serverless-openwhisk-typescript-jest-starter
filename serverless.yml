@@ -1,0 +1,21 @@
+service: auth
+
+plugins:
+   - serverless-webpack
+   - serverless-openwhisk
+
+provider:
+  name: openwhisk
+
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+    packager: yarn
+
+package:
+  individually: true
+
+functions:
+  hello:
+    handler: src/handler.hello

@@ -1,0 +1,30 @@
+{
+  "name": "sls-whisk-typescript-jest-starter",
+  "version": "1.0.0",
+  "description": "Serverless - Openwhisk + Typescript + Jest - Starter",
+  "main": "src/handler.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "serverless",
+    "openwhisk"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/jest": "^24.0.18",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "jest": "^24.9.0",
+    "serverless-openwhisk": ">=0.13.0",
+    "serverless-webpack": "^5.3.1",
+    "webpack": "^4.39.3",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "ts-loader": "^6.1.0",
+    "typescript": "^3.6.3"
+  }
+}
